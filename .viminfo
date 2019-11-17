@@ -8,6 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Command Line History (newest to oldest):
+:q!
 :wq!
 
 # Search String History (newest to oldest):
@@ -21,12 +22,18 @@
 # Registers:
 
 # File marks:
-'0  1  85  ~/git_latest_version_rpm_details
+'0  1  0  ~/hello_recipe.rb
+'1  1  85  ~/git_latest_version_rpm_details
 
 # Jumplist (newest first):
+-'  1  0  ~/hello_recipe.rb
+-'  1  85  ~/git_latest_version_rpm_details
 -'  1  85  ~/git_latest_version_rpm_details
 
 # History of marks within files (newest to oldest):
+
+> ~/hello_recipe.rb
+	"	1	0
 
 > ~/git_latest_version_rpm_details
 	"	1	85
