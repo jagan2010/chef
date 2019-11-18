@@ -415,7 +415,7 @@
     },
     "memory": {
       "swap": {
-        "cached": "4036kB",
+        "cached": "1272kB",
         "total": "8388604kB",
         "free": "8368124kB"
       },
@@ -426,24 +426,24 @@
         "surplus": "0"
       },
       "total": "994512kB",
-      "free": "180188kB",
-      "available": "480024kB",
-      "buffers": "108kB",
-      "cached": "424268kB",
-      "active": "301812kB",
-      "inactive": "370752kB",
+      "free": "102156kB",
+      "available": "436660kB",
+      "buffers": "3116kB",
+      "cached": "444784kB",
+      "active": "332872kB",
+      "inactive": "362476kB",
       "dirty": "20kB",
       "writeback": "0kB",
-      "anon_pages": "250188kB",
-      "mapped": "31308kB",
-      "slab": "96148kB",
-      "slab_reclaimable": "55248kB",
-      "slab_unreclaim": "40900kB",
-      "page_tables": "7184kB",
+      "anon_pages": "252180kB",
+      "mapped": "34596kB",
+      "slab": "131868kB",
+      "slab_reclaimable": "89980kB",
+      "slab_unreclaim": "41888kB",
+      "page_tables": "7296kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "8885860kB",
-      "committed_as": "558280kB",
+      "committed_as": "566492kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "0kB",
       "vmalloc_chunk": "0kB",
@@ -614,16 +614,16 @@
           "ens3": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "606175922",
-              "packets": "648254",
+              "bytes": "698186132",
+              "packets": "764634",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "501339794",
-              "packets": "677783",
+              "bytes": "555540798",
+              "packets": "799581",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -642,10 +642,10 @@
     "platform": "oracle",
     "platform_version": "7.7",
     "platform_family": "rhel",
-    "uptime_seconds": 476861,
-    "uptime": "5 days 12 hours 27 minutes 41 seconds",
-    "idletime_seconds": 934881,
-    "idletime": "10 days 19 hours 41 minutes 21 seconds",
+    "uptime_seconds": 561198,
+    "uptime": "6 days 11 hours 53 minutes 18 seconds",
+    "idletime_seconds": 1100245,
+    "idletime": "12 days 17 hours 37 minutes 25 seconds",
     "virtualization": {
       "systems": {
         "kvm": "guest"
@@ -1609,12 +1609,12 @@
         },
         "/dev/sda3": {
           "kb_size": "40223552",
-          "kb_used": "3581244",
-          "kb_available": "36642308",
+          "kb_used": "3586512",
+          "kb_available": "36637040",
           "percent_used": "9%",
           "total_inodes": "40243200",
-          "inodes_used": "95279",
-          "inodes_available": "40147921",
+          "inodes_used": "95570",
+          "inodes_available": "40147630",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1899,12 +1899,12 @@
         },
         "/run": {
           "kb_size": "497256",
-          "kb_used": "25456",
-          "kb_available": "471800",
-          "percent_used": "6%",
+          "kb_used": "31680",
+          "kb_available": "465576",
+          "percent_used": "7%",
           "total_inodes": "124314",
-          "inodes_used": "514",
-          "inodes_available": "123800",
+          "inodes_used": "517",
+          "inodes_available": "123797",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1942,12 +1942,12 @@
         },
         "/": {
           "kb_size": "40223552",
-          "kb_used": "3581244",
-          "kb_available": "36642308",
+          "kb_used": "3586512",
+          "kb_available": "36637040",
           "percent_used": "9%",
           "total_inodes": "40243200",
-          "inodes_used": "95279",
-          "inodes_available": "40147921",
+          "inodes_used": "95570",
+          "inodes_available": "40147630",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2402,13 +2402,13 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "497256",
-          "kb_used": "25456",
-          "kb_available": "471800",
-          "percent_used": "6%",
+          "kb_used": "31680",
+          "kb_available": "465576",
+          "percent_used": "7%",
           "mount": "/run",
           "total_inodes": "124314",
-          "inodes_used": "514",
-          "inodes_available": "123800",
+          "inodes_used": "517",
+          "inodes_available": "123797",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2443,13 +2443,13 @@
         "/dev/sda3,/": {
           "device": "/dev/sda3",
           "kb_size": "40223552",
-          "kb_used": "3581244",
-          "kb_available": "36642308",
+          "kb_used": "3586512",
+          "kb_available": "36637040",
           "percent_used": "9%",
           "mount": "/",
           "total_inodes": "40243200",
-          "inodes_used": "95279",
-          "inodes_available": "40147921",
+          "inodes_used": "95570",
+          "inodes_available": "40147630",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2925,7 +2925,7 @@
       "search-state-factory": "/usr/local/share/factory/var",
       "search-configuration": "/root/.config"
     },
-    "ohai_time": 1574009093.1656022,
+    "ohai_time": 1574093430.2745867,
     "packages": {
       "iwl100-firmware": {
         "epoch": "999",
@@ -7014,7 +7014,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 43202,
+      "_AVPHYS_PAGES": 24826,
       "_NPROCESSORS_CONF": 2,
       "_NPROCESSORS_ONLN": 2,
       "_PHYS_PAGES": 248628,
@@ -7277,13 +7277,23 @@
     "name": "ansible-compute-host.publicsubnet2.myvcn.oraclevcn.com",
     "chef_environment": "_default",
     "recipes": [
-
+      "apache",
+      "apache::default",
+      "apache::webserver"
     ],
     "expanded_run_list": [
-
+      "apache::default"
     ],
     "roles": [
 
-    ]
-  }
+    ],
+    "cookbooks": {
+      "apache": {
+        "version": "0.1.0"
+      }
+    }
+  },
+  "run_list": [
+    "recipe[apache::default]"
+  ]
 }

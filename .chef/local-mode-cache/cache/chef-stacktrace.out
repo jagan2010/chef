@@ -1,60 +1,18 @@
-Generated at 2019-11-17 16:42:54 +0000
-RuntimeError: yum_package[cowsay] (@recipe_files::/home/opc/hello_recipe.rb line 1) had an error: RuntimeError: yum-helper.py had stderr/stdout output:
-
-Traceback (most recent call last):
-  File "/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/yum_helper.py", line 205, in <module>
-    query(command)
-  File "/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/yum_helper.py", line 121, in query
-    obj = base.pkgSack
-  File "/usr/lib/python2.7/site-packages/yum/__init__.py", line 1075, in <lambda>
-    pkgSack = property(fget=lambda self: self._getSacks(),
-  File "/usr/lib/python2.7/site-packages/yum/__init__.py", line 778, in _getSacks
-    self.repos.populateSack(which=repos)
-  File "/usr/lib/python2.7/site-packages/yum/repos.py", line 347, in populateSack
-    self.doSetup()
-  File "/usr/lib/python2.7/site-packages/yum/repos.py", line 157, in doSetup
-    self.retrieveAllMD()
-  File "/usr/lib/python2.7/site-packages/yum/repos.py", line 88, in retrieveAllMD
-    dl = repo._async and repo._commonLoadRepoXML(repo)
-  File "/usr/lib/python2.7/site-packages/yum/yumRepo.py", line 1479, in _commonLoadRepoXML
-    if self._latestRepoXML(local):
-  File "/usr/lib/python2.7/site-packages/yum/yumRepo.py", line 1448, in _latestRepoXML
-    oxml = self._saveOldRepoXML(local)
-  File "/usr/lib/python2.7/site-packages/yum/yumRepo.py", line 1305, in _saveOldRepoXML
-    shutil.copy2(local, old_local)
-  File "/usr/lib64/python2.7/shutil.py", line 130, in copy2
-    copyfile(src, dst)
-  File "/usr/lib64/python2.7/shutil.py", line 83, in copyfile
-    with open(dst, 'wb') as fdst:
-IOError: [Errno 13] Permission denied: '/var/cache/yum/x86_64/7Server/WANdisco-git/repomd.xml.old.tmp'
-Loaded plugins: langpacks
-
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/python_helper.rb:215:in `rescue in with_helper'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/python_helper.rb:193:in `with_helper'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/python_helper.rb:151:in `query'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/python_helper.rb:117:in `package_query'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:230:in `available_version'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:79:in `block in candidate_version'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:78:in `each'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:78:in `each_with_index'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:78:in `each'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:78:in `map'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:78:in `candidate_version'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:613:in `block in candidate_version_array'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/decorator/lazy_array.rb:55:in `block in []'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/decorator/lazy.rb:54:in `__getobj__'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/decorator.rb:31:in `nil?'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:554:in `block in packages_missing_candidates'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:595:in `block in each_package'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:591:in `each'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:591:in `each_with_index'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:591:in `each_package'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:553:in `packages_missing_candidates'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:80:in `block in define_resource_requirements'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/mixin/why_run.rb:309:in `assert'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:78:in `define_resource_requirements'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:74:in `define_resource_requirements'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider.rb:169:in `run_action'
+Generated at 2019-11-18 16:10:12 +0000
+Errno::EACCES: file[/var/www/html/index.html] (apache::webserver line 10) had an error: Errno::EACCES: Permission denied @ rb_sysopen - /var/www/html/index.html
+/opt/chefdk/embedded/lib/ruby/2.5.0/fileutils.rb:1057:in `initialize'
+/opt/chefdk/embedded/lib/ruby/2.5.0/fileutils.rb:1057:in `open'
+/opt/chefdk/embedded/lib/ruby/2.5.0/fileutils.rb:1057:in `rescue in block in touch'
+/opt/chefdk/embedded/lib/ruby/2.5.0/fileutils.rb:1053:in `block in touch'
+/opt/chefdk/embedded/lib/ruby/2.5.0/fileutils.rb:1051:in `each'
+/opt/chefdk/embedded/lib/ruby/2.5.0/fileutils.rb:1051:in `touch'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/file_content_management/deploy/mv_unix.rb:34:in `create'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/file.rb:363:in `block in do_create_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/mixin/why_run.rb:51:in `add_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider.rb:227:in `converge_by'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/file.rb:362:in `do_create_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/file.rb:143:in `action_create'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider.rb:182:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/resource.rb:577:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/runner.rb:70:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/runner.rb:98:in `block (2 levels) in converge'
@@ -82,40 +40,18 @@ Loaded plugins: langpacks
 /usr/bin/chef-client:296:in `load'
 /usr/bin/chef-client:296:in `<main>'
 
->>>> Caused by EOFError: end of file reached
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/python_helper.rb:155:in `sysread'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/python_helper.rb:155:in `block in query'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/python_helper.rb:198:in `block in with_helper'
-/opt/chefdk/embedded/lib/ruby/2.5.0/timeout.rb:93:in `block in timeout'
-/opt/chefdk/embedded/lib/ruby/2.5.0/timeout.rb:33:in `block in catch'
-/opt/chefdk/embedded/lib/ruby/2.5.0/timeout.rb:33:in `catch'
-/opt/chefdk/embedded/lib/ruby/2.5.0/timeout.rb:33:in `catch'
-/opt/chefdk/embedded/lib/ruby/2.5.0/timeout.rb:108:in `timeout'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/python_helper.rb:196:in `with_helper'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/python_helper.rb:151:in `query'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum/python_helper.rb:117:in `package_query'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:230:in `available_version'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:79:in `block in candidate_version'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:78:in `each'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:78:in `each_with_index'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:78:in `each'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:78:in `map'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:78:in `candidate_version'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:613:in `block in candidate_version_array'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/decorator/lazy_array.rb:55:in `block in []'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/decorator/lazy.rb:54:in `__getobj__'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/decorator.rb:31:in `nil?'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:554:in `block in packages_missing_candidates'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:595:in `block in each_package'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:591:in `each'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:591:in `each_with_index'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:591:in `each_package'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:553:in `packages_missing_candidates'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:80:in `block in define_resource_requirements'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/mixin/why_run.rb:309:in `assert'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package.rb:78:in `define_resource_requirements'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/package/yum.rb:74:in `define_resource_requirements'
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider.rb:169:in `run_action'
+>>>> Caused by Errno::ENOENT: No such file or directory @ apply2files - /var/www/html/index.html
+/opt/chefdk/embedded/lib/ruby/2.5.0/fileutils.rb:1054:in `utime'
+/opt/chefdk/embedded/lib/ruby/2.5.0/fileutils.rb:1054:in `block in touch'
+/opt/chefdk/embedded/lib/ruby/2.5.0/fileutils.rb:1051:in `each'
+/opt/chefdk/embedded/lib/ruby/2.5.0/fileutils.rb:1051:in `touch'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/file_content_management/deploy/mv_unix.rb:34:in `create'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/file.rb:363:in `block in do_create_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/mixin/why_run.rb:51:in `add_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider.rb:227:in `converge_by'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/file.rb:362:in `do_create_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider/file.rb:143:in `action_create'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/provider.rb:182:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/resource.rb:577:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/runner.rb:70:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/runner.rb:98:in `block (2 levels) in converge'
