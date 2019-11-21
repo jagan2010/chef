@@ -5,6 +5,12 @@
 
     ]
   },
+  "default": {
+    "company": {
+      "name": "Oracle's India Pvt Ltd",
+      "slogan": "Chef is the best"
+    }
+  },
   "automatic": {
     "kernel": {
       "name": "Linux",
@@ -14,131 +20,11 @@
       "processor": "x86_64",
       "os": "GNU/Linux",
       "modules": {
-        "xt_comment": {
-          "size": "16384",
-          "refcount": "13"
-        },
-        "xt_owner": {
-          "size": "16384",
-          "refcount": "3"
-        },
-        "ip6t_rpfilter": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "ip6t_REJECT": {
-          "size": "16384",
-          "refcount": "2"
-        },
-        "nf_reject_ipv6": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "ipt_REJECT": {
-          "size": "16384",
-          "refcount": "6"
-        },
-        "nf_reject_ipv4": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "xt_conntrack": {
-          "size": "16384",
-          "refcount": "14"
-        },
-        "ebtable_nat": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "ip6table_nat": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "nf_conntrack_ipv6": {
-          "size": "20480",
-          "refcount": "7"
-        },
-        "nf_defrag_ipv6": {
-          "size": "20480",
-          "refcount": "1"
-        },
-        "nf_nat_ipv6": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "ip6table_mangle": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "ip6table_security": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "ip6table_raw": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "iptable_nat": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "nf_conntrack_ipv4": {
-          "size": "16384",
-          "refcount": "9"
-        },
-        "nf_defrag_ipv4": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "nf_nat_ipv4": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "nf_nat": {
-          "size": "32768",
-          "refcount": "2"
-        },
-        "iptable_mangle": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "iptable_security": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "iptable_raw": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "nf_conntrack": {
-          "size": "139264",
-          "refcount": "6"
-        },
         "ip_set": {
           "size": "40960",
           "refcount": "0"
         },
         "nfnetlink": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "ebtable_filter": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "ebtables": {
-          "size": "32768",
-          "refcount": "2"
-        },
-        "ip6table_filter": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "ip6_tables": {
-          "size": "28672",
-          "refcount": "7"
-        },
-        "iptable_filter": {
           "size": "16384",
           "refcount": "1"
         },
@@ -187,10 +73,6 @@
           "size": "16384",
           "refcount": "0"
         },
-        "ip_tables": {
-          "size": "24576",
-          "refcount": "5"
-        },
         "vfat": {
           "size": "20480",
           "refcount": "1"
@@ -205,7 +87,7 @@
         },
         "libcrc32c": {
           "size": "16384",
-          "refcount": "3"
+          "refcount": "1"
         },
         "sd_mod": {
           "size": "53248",
@@ -415,9 +297,9 @@
     },
     "memory": {
       "swap": {
-        "cached": "1272kB",
+        "cached": "1472kB",
         "total": "8388604kB",
-        "free": "8368124kB"
+        "free": "8363772kB"
       },
       "hugepages": {
         "total": "0",
@@ -426,24 +308,24 @@
         "surplus": "0"
       },
       "total": "994512kB",
-      "free": "102156kB",
-      "available": "436660kB",
+      "free": "93168kB",
+      "available": "431028kB",
       "buffers": "3116kB",
-      "cached": "444784kB",
-      "active": "332872kB",
-      "inactive": "362476kB",
-      "dirty": "20kB",
+      "cached": "408408kB",
+      "active": "321852kB",
+      "inactive": "313120kB",
+      "dirty": "12kB",
       "writeback": "0kB",
-      "anon_pages": "252180kB",
-      "mapped": "34596kB",
-      "slab": "131868kB",
-      "slab_reclaimable": "89980kB",
-      "slab_unreclaim": "41888kB",
-      "page_tables": "7296kB",
+      "anon_pages": "230252kB",
+      "mapped": "40708kB",
+      "slab": "197696kB",
+      "slab_reclaimable": "153568kB",
+      "slab_unreclaim": "44128kB",
+      "page_tables": "11656kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "8885860kB",
-      "committed_as": "566492kB",
+      "committed_as": "597400kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "0kB",
       "vmalloc_chunk": "0kB",
@@ -596,16 +478,16 @@
           "lo": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "692",
-              "packets": "10",
+              "bytes": "2488",
+              "packets": "31",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "692",
-              "packets": "10",
+              "bytes": "2488",
+              "packets": "31",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -614,16 +496,16 @@
           "ens3": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "698186132",
-              "packets": "764634",
+              "bytes": "961469899",
+              "packets": "1084133",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "555540798",
-              "packets": "799581",
+              "bytes": "711926317",
+              "packets": "1131328",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -642,10 +524,10 @@
     "platform": "oracle",
     "platform_version": "7.7",
     "platform_family": "rhel",
-    "uptime_seconds": 561198,
-    "uptime": "6 days 11 hours 53 minutes 18 seconds",
-    "idletime_seconds": 1100245,
-    "idletime": "12 days 17 hours 37 minutes 25 seconds",
+    "uptime_seconds": 804957,
+    "uptime": "9 days 07 hours 35 minutes 57 seconds",
+    "idletime_seconds": 1577506,
+    "idletime": "18 days 06 hours 11 minutes 46 seconds",
     "virtualization": {
       "systems": {
         "kvm": "guest"
@@ -1609,12 +1491,12 @@
         },
         "/dev/sda3": {
           "kb_size": "40223552",
-          "kb_used": "3586512",
-          "kb_available": "36637040",
+          "kb_used": "3603180",
+          "kb_available": "36620372",
           "percent_used": "9%",
           "total_inodes": "40243200",
-          "inodes_used": "95570",
-          "inodes_available": "40147630",
+          "inodes_used": "95714",
+          "inodes_available": "40147486",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1899,12 +1781,12 @@
         },
         "/run": {
           "kb_size": "497256",
-          "kb_used": "31680",
-          "kb_available": "465576",
-          "percent_used": "7%",
+          "kb_used": "44128",
+          "kb_available": "453128",
+          "percent_used": "9%",
           "total_inodes": "124314",
-          "inodes_used": "517",
-          "inodes_available": "123797",
+          "inodes_used": "525",
+          "inodes_available": "123789",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1942,12 +1824,12 @@
         },
         "/": {
           "kb_size": "40223552",
-          "kb_used": "3586512",
-          "kb_available": "36637040",
+          "kb_used": "3603180",
+          "kb_available": "36620372",
           "percent_used": "9%",
           "total_inodes": "40243200",
-          "inodes_used": "95570",
-          "inodes_available": "40147630",
+          "inodes_used": "95714",
+          "inodes_available": "40147486",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2402,13 +2284,13 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "497256",
-          "kb_used": "31680",
-          "kb_available": "465576",
-          "percent_used": "7%",
+          "kb_used": "44128",
+          "kb_available": "453128",
+          "percent_used": "9%",
           "mount": "/run",
           "total_inodes": "124314",
-          "inodes_used": "517",
-          "inodes_available": "123797",
+          "inodes_used": "525",
+          "inodes_available": "123789",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2443,13 +2325,13 @@
         "/dev/sda3,/": {
           "device": "/dev/sda3",
           "kb_size": "40223552",
-          "kb_used": "3586512",
-          "kb_available": "36637040",
+          "kb_used": "3603180",
+          "kb_available": "36620372",
           "percent_used": "9%",
           "mount": "/",
           "total_inodes": "40243200",
-          "inodes_used": "95570",
-          "inodes_available": "40147630",
+          "inodes_used": "95714",
+          "inodes_available": "40147486",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2925,7 +2807,7 @@
       "search-state-factory": "/usr/local/share/factory/var",
       "search-configuration": "/root/.config"
     },
-    "ohai_time": 1574093430.2745867,
+    "ohai_time": 1574337189.9935842,
     "packages": {
       "iwl100-firmware": {
         "epoch": "999",
@@ -7014,7 +6896,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 24826,
+      "_AVPHYS_PAGES": 22100,
       "_NPROCESSORS_CONF": 2,
       "_NPROCESSORS_ONLN": 2,
       "_PHYS_PAGES": 248628,
@@ -7277,23 +7159,21 @@
     "name": "ansible-compute-host.publicsubnet2.myvcn.oraclevcn.com",
     "chef_environment": "_default",
     "recipes": [
-      "apache",
-      "apache::default",
-      "apache::webserver"
+      "chef-workstation::motd"
     ],
     "expanded_run_list": [
-      "apache::default"
+      "chef-workstation::motd"
     ],
     "roles": [
 
     ],
     "cookbooks": {
-      "apache": {
+      "chef-workstation": {
         "version": "0.1.0"
       }
     }
   },
   "run_list": [
-    "recipe[apache::default]"
+    "recipe[chef-workstation::motd]"
   ]
 }

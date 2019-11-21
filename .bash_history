@@ -273,3 +273,186 @@ ls -lrt
 history
 sudo -i
 exit
+clear
+df -hk
+exit
+pwd
+ls -lrt
+git push -u origin masster
+git push -u origin master
+git pull
+exit
+df -hk
+pwd
+ls -lrt
+cd cookbooks
+ls -lrt
+cd *
+ls -lrt
+cd recipes
+ls -lrt
+cat default.rb
+pwd
+ls -lrt
+cd
+pwdls -lrt
+pwd
+ls -lrt
+chef-client --help
+pwd
+ls -lrt
+chef-client -z cookbooks/chef-workstation/recipes/default.rb 
+cat cookbooks/chef-workstation/recipes/default.rb 
+cd cookbooks/chef-workstation/recipes/
+ls -lrt
+cat hello_recipe.rb 
+pwd
+ls -lrt
+cd
+chef-client -zr 'recipe[chef-workstation::default]'
+pwd
+ls -lrt
+cd cookbooks
+ls -lrt
+cd ..
+ls -lrt
+chef --help
+chef generate --help
+chef generate cookbook --help
+chef generate cookbook /cookbooks/apache
+pwd
+ls -lrt
+chef generate cookbook /home/opc//cookbooks/apache
+chef generate cookbook /home/opc/cookbooks/apache
+pwd
+ls -lrt
+chef generate recipe --help
+chef generate recipe /home/opc/cookbooks/apache webserver
+pwd
+ls -ltry
+pwd
+ls -lrt
+pwd
+ls -lrt
+chef-client
+chef-client --help
+pwd
+ls -lrt
+pwd
+ls -lrt
+pwd
+ls -lrt
+pwd
+ls -lrt
+chef-client -zr 'recipe[apache::default]'
+sudo chef-client -zr 'recipe[apache::default]'
+curl localhost
+netstat -aon|grep 80
+curl localhost
+sudo -i
+pwd
+ls -lrt
+git add .
+git status
+git commit -m "updates 18-NOV-2019"
+git push -u origin master
+pwd
+ls -lrt
+git push -u origin master
+git pull 
+pwd
+ls -lrt
+cd cookbooks
+ls -lrt
+cd apche
+ls -lrt
+cd apache
+ls -lrt
+c recipes
+ls -lrt
+cd recipes
+ls -lrt
+cat webserver.rb
+pwd
+ls -lrt
+pwd
+ls -lrt
+pwd
+ls -lrt
+pwd
+ls -lrt
+cd ../..
+ls -lrt
+pwd
+cd ..
+ls -lrt
+pwd
+ls -lrt
+pwd
+ls -lrt
+wd
+pwd
+pwd
+ls -lrt
+cd cookbooks
+pwd
+ls -lrt
+cd apache
+pwd
+ls -lrt
+cd recipes
+ls -lrt
+pwd
+cat webserver.rb
+pwd
+ls -lrt
+ 
+pwd
+ls -lrt
+cd nodes
+ls -lrt
+cd ..
+ls -lrt
+cd nodes
+ls -lrt
+cat ansible-compute-host.publicsubnet2.myvcn.oraclevcn.com.json 
+pwd
+ls -lrt
+more 
+more ansible-compute-host.publicsubnet2.myvcn.oraclevcn.com.json 
+                         
+pwd
+ls -lrt
+history
+chef-client -rz 'recipe[chef-workstation::motd]'
+sudo chef-client -rz 'recipe[chef-workstation::motd]'
+sudo chef-client -zr 'recipe[chef-workstation::motd]'
+cat /etc/motd
+pwd
+ls -lrt
+exit
+cat /etc/motd
+sudo chef-client -zr 'recipe[chef-workstation::motd]'
+exit
+cat /etc/motd.conf
+pwd
+ls -lrt
+cd cookbooks
+ls -lrt
+cd chef-workstation/
+ls -lrt
+cd ..
+ls -lrt
+cd ..
+ls -lrt
+pwd
+chef generate -h
+chef generate attribute cookbooks/chef-workstation default
+pwd
+ls -lrt
+chef-client -zr 'recipe[chef-workstation::motd.rb]'
+sudo chef-client -zr 'recipe[chef-workstation::motd.rb]'
+sudo chef-client -zr 'recipe[chef-workstation::motd]'
+exit
+sudo chef-client -zr 'recipe[chef-workstation::motd]'
+exit

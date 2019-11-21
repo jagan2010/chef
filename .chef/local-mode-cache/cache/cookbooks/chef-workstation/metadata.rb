@@ -1,9 +1,9 @@
-name 'apache'
+name 'chef-workstation'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
-description 'Installs/Configures apache'
-long_description 'Installs/Configures apache'
+description 'Installs/Configures chef-workstation'
+long_description 'Installs/Configures chef-workstation'
 version '0.1.0'
 chef_version '>= 13.0'
 
@@ -11,10 +11,10 @@ chef_version '>= 13.0'
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
 #
-# issues_url 'https://github.com/<insert_org_here>/apache/issues'
+# issues_url 'https://github.com/<insert_org_here>/chef-workstation/issues'
 
 # The `source_url` points to the development repository for this cookbook.  A
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
 #
-# source_url 'https://github.com/<insert_org_here>/apache'
+# source_url 'https://github.com/<insert_org_here>/chef-workstation'

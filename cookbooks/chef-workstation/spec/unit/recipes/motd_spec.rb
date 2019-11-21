@@ -1,12 +1,12 @@
 #
-# Cookbook:: apache
-# Spec:: default
+# Cookbook:: chef-workstation
+# Spec:: motd
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-describe 'apache::default' do
+describe 'chef-workstation::motd' do
   context 'When all attributes are default, on Ubuntu 16.04' do
     let(:chef_run) do
       # for a complete list of available platforms and versions see:
