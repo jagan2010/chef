@@ -1,0 +1,6 @@
+Hello Jagadish!  This is the message of the day
+    My ipaddress is 48.72.96.130
+    total memory allocated is 994512kB
+    kernel release is 4.14.35-1902.5.2.2.el7uek.x86_64
+    My company is Oracle's India Pvt Ltd
+    My slogan is Chef is the best

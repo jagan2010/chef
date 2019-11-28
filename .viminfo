@@ -22,15 +22,24 @@
 # Registers:
 
 # File marks:
-'0  1  0  ~/hello_recipe.rb
-'1  1  85  ~/git_latest_version_rpm_details
+'0  1  0  ~/important.txt
+'1  1  0  ~/hello_recipe.rb
+'2  1  85  ~/git_latest_version_rpm_details
 
 # Jumplist (newest first):
+-'  1  0  ~/important.txt
+-'  1  0  ~/hello_recipe.rb
+-'  1  85  ~/git_latest_version_rpm_details
+-'  1  85  ~/git_latest_version_rpm_details
 -'  1  0  ~/hello_recipe.rb
 -'  1  85  ~/git_latest_version_rpm_details
 -'  1  85  ~/git_latest_version_rpm_details
 
 # History of marks within files (newest to oldest):
+
+> ~/important.txt
+	"	1	0
+	^	1	0
 
 > ~/hello_recipe.rb
 	"	1	0

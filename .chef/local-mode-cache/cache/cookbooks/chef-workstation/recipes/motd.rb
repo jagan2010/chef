@@ -9,7 +9,7 @@ file '/etc/motd' do
     total memory allocated is #{node['memory']['total']}
     kernel release is #{node['kernel']['release']}
     My company is #{node['company']['name']}
-    My slogan is #{node['company']['Slogan']}
+    My slogan is #{node['company']['slogan']}
     "
 end
 

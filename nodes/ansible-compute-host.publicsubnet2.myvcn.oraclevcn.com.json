@@ -297,9 +297,9 @@
     },
     "memory": {
       "swap": {
-        "cached": "1472kB",
+        "cached": "2292kB",
         "total": "8388604kB",
-        "free": "8363772kB"
+        "free": "8362492kB"
       },
       "hugepages": {
         "total": "0",
@@ -308,24 +308,24 @@
         "surplus": "0"
       },
       "total": "994512kB",
-      "free": "93168kB",
-      "available": "431028kB",
+      "free": "100228kB",
+      "available": "427328kB",
       "buffers": "3116kB",
-      "cached": "408408kB",
-      "active": "321852kB",
-      "inactive": "313120kB",
-      "dirty": "12kB",
+      "cached": "394860kB",
+      "active": "301364kB",
+      "inactive": "321896kB",
+      "dirty": "0kB",
       "writeback": "0kB",
-      "anon_pages": "230252kB",
-      "mapped": "40708kB",
-      "slab": "197696kB",
-      "slab_reclaimable": "153568kB",
-      "slab_unreclaim": "44128kB",
-      "page_tables": "11656kB",
+      "anon_pages": "231284kB",
+      "mapped": "38504kB",
+      "slab": "201080kB",
+      "slab_reclaimable": "156412kB",
+      "slab_unreclaim": "44668kB",
+      "page_tables": "12540kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "8885860kB",
-      "committed_as": "597400kB",
+      "committed_as": "579184kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "0kB",
       "vmalloc_chunk": "0kB",
@@ -496,16 +496,16 @@
           "ens3": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "961469899",
-              "packets": "1084133",
+              "bytes": "978959433",
+              "packets": "1109228",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "711926317",
-              "packets": "1131328",
+              "bytes": "722437279",
+              "packets": "1158390",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -524,16 +524,14 @@
     "platform": "oracle",
     "platform_version": "7.7",
     "platform_family": "rhel",
-    "uptime_seconds": 804957,
-    "uptime": "9 days 07 hours 35 minutes 57 seconds",
-    "idletime_seconds": 1577506,
-    "idletime": "18 days 06 hours 11 minutes 46 seconds",
+    "uptime_seconds": 820677,
+    "uptime": "9 days 11 hours 57 minutes 57 seconds",
+    "idletime_seconds": 1608106,
+    "idletime": "18 days 14 hours 41 minutes 46 seconds",
     "virtualization": {
       "systems": {
-        "kvm": "guest"
-      },
-      "system": "kvm",
-      "role": "guest"
+
+      }
     },
     "languages": {
       "c": {
@@ -568,156 +566,7 @@
       }
     },
     "dmi": {
-      "dmidecode_version": "3.2",
-      "smbios_version": "2.8",
-      "structures": {
-        "count": "9",
-        "size": "410"
-      },
-      "system": {
-        "all_records": [
-          {
-            "record_id": "0x0100",
-            "size": "1",
-            "application_identifier": "System Information",
-            "Manufacturer": "QEMU",
-            "Product Name": "Standard PC (i440FX + PIIX, 1996)",
-            "Version": "pc-i440fx-2.9",
-            "Serial Number": "Not Specified",
-            "UUID": "11012e5c-bb9e-479b-a5c4-e887b7a52a96",
-            "Wake-up Type": "Power Switch",
-            "SKU Number": "Not Specified",
-            "Family": "Not Specified"
-          }
-        ],
-        "manufacturer": "QEMU",
-        "product_name": "Standard PC (i440FX + PIIX, 1996)",
-        "version": "pc-i440fx-2.9",
-        "serial_number": "Not Specified",
-        "uuid": "11012e5c-bb9e-479b-a5c4-e887b7a52a96",
-        "wake_up_type": "Power Switch",
-        "sku_number": "Not Specified",
-        "family": "Not Specified"
-      },
-      "chassis": {
-        "all_records": [
-          {
-            "record_id": "0x0300",
-            "size": "3",
-            "application_identifier": "Chassis Information",
-            "Manufacturer": "QEMU",
-            "Type": "Other",
-            "Lock": "Not Present",
-            "Version": "pc-i440fx-2.9",
-            "Serial Number": "Not Specified",
-            "Asset Tag": "OracleCloud.com",
-            "Boot-up State": "Safe",
-            "Power Supply State": "Safe",
-            "Thermal State": "Safe",
-            "Security Status": "Unknown",
-            "OEM Information": "0x00000000",
-            "Height": "Unspecified",
-            "Number Of Power Cords": "Unspecified",
-            "Contained Elements": "0"
-          }
-        ],
-        "manufacturer": "QEMU",
-        "type": "Other",
-        "lock": "Not Present",
-        "version": "pc-i440fx-2.9",
-        "serial_number": "Not Specified",
-        "asset_tag": "OracleCloud.com",
-        "boot_up_state": "Safe",
-        "power_supply_state": "Safe",
-        "thermal_state": "Safe",
-        "security_status": "Unknown",
-        "oem_information": "0x00000000",
-        "height": "Unspecified",
-        "number_of_power_cords": "Unspecified",
-        "contained_elements": "0"
-      },
-      "processor": {
-        "all_records": [
-          {
-            "record_id": "0x0400",
-            "size": "4",
-            "application_identifier": "Processor Information",
-            "Socket Designation": "CPU 0",
-            "Type": "Central Processor",
-            "Family": "Other",
-            "Manufacturer": "QEMU",
-            "ID": "12 0F 80 00 FF FB 8B 07",
-            "Version": "pc-i440fx-2.9",
-            "Voltage": "Unknown",
-            "External Clock": "Unknown",
-            "Max Speed": "2000 MHz",
-            "Current Speed": "2000 MHz",
-            "Status": "Populated, Enabled",
-            "Upgrade": "Other",
-            "L1 Cache Handle": "Not Provided",
-            "L2 Cache Handle": "Not Provided",
-            "L3 Cache Handle": "Not Provided",
-            "Serial Number": "Not Specified",
-            "Asset Tag": "Not Specified",
-            "Part Number": "Not Specified",
-            "Core Count": "1",
-            "Core Enabled": "1",
-            "Thread Count": "2",
-            "Characteristics": "None"
-          }
-        ],
-        "socket_designation": "CPU 0",
-        "type": "Central Processor",
-        "family": "Other",
-        "manufacturer": "QEMU",
-        "id": "12 0F 80 00 FF FB 8B 07",
-        "version": "pc-i440fx-2.9",
-        "voltage": "Unknown",
-        "external_clock": "Unknown",
-        "max_speed": "2000 MHz",
-        "current_speed": "2000 MHz",
-        "status": "Populated, Enabled",
-        "upgrade": "Other",
-        "l1_cache_handle": "Not Provided",
-        "l2_cache_handle": "Not Provided",
-        "l3_cache_handle": "Not Provided",
-        "serial_number": "Not Specified",
-        "asset_tag": "Not Specified",
-        "part_number": "Not Specified",
-        "core_count": "1",
-        "core_enabled": "1",
-        "thread_count": "2",
-        "characteristics": "None"
-      },
-      "bios": {
-        "all_records": [
-          {
-            "record_id": "0x0000",
-            "size": "0",
-            "application_identifier": "BIOS Information",
-            "Vendor": "EFI Development Kit II / OVMF",
-            "Version": "0.0.0",
-            "Release Date": "02/06/2015",
-            "Address": "0xE8000",
-            "Runtime Size": "96 kB",
-            "ROM Size": "64 kB",
-            "Characteristics": {
-              "BIOS characteristics not supported": null,
-              "Targeted content distribution is supported": null,
-              "UEFI is supported": null,
-              "System is a virtual machine": null
-            },
-            "BIOS Revision": "0.0"
-          }
-        ],
-        "vendor": "EFI Development Kit II / OVMF",
-        "version": "0.0.0",
-        "release_date": "02/06/2015",
-        "address": "0xE8000",
-        "runtime_size": "96 kB",
-        "rom_size": "64 kB",
-        "bios_revision": "0.0"
-      }
+      "dmidecode_version": "3.2"
     },
     "etc": {
       "passwd": {
@@ -1235,7 +1084,7 @@
         }
       }
     },
-    "current_user": "root",
+    "current_user": "opc",
     "cloud": null,
     "command": {
       "ps": "ps -ef"
@@ -1491,12 +1340,12 @@
         },
         "/dev/sda3": {
           "kb_size": "40223552",
-          "kb_used": "3603180",
-          "kb_available": "36620372",
+          "kb_used": "3603884",
+          "kb_available": "36619668",
           "percent_used": "9%",
           "total_inodes": "40243200",
-          "inodes_used": "95714",
-          "inodes_available": "40147486",
+          "inodes_used": "95785",
+          "inodes_available": "40147415",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1781,12 +1630,12 @@
         },
         "/run": {
           "kb_size": "497256",
-          "kb_used": "44128",
-          "kb_available": "453128",
+          "kb_used": "44184",
+          "kb_available": "453072",
           "percent_used": "9%",
           "total_inodes": "124314",
-          "inodes_used": "525",
-          "inodes_available": "123789",
+          "inodes_used": "543",
+          "inodes_available": "123771",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1824,12 +1673,12 @@
         },
         "/": {
           "kb_size": "40223552",
-          "kb_used": "3603180",
-          "kb_available": "36620372",
+          "kb_used": "3603884",
+          "kb_available": "36619668",
           "percent_used": "9%",
           "total_inodes": "40243200",
-          "inodes_used": "95714",
-          "inodes_available": "40147486",
+          "inodes_used": "95785",
+          "inodes_available": "40147415",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2284,13 +2133,13 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "497256",
-          "kb_used": "44128",
-          "kb_available": "453128",
+          "kb_used": "44184",
+          "kb_available": "453072",
           "percent_used": "9%",
           "mount": "/run",
           "total_inodes": "124314",
-          "inodes_used": "525",
-          "inodes_available": "123789",
+          "inodes_used": "543",
+          "inodes_available": "123771",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2325,13 +2174,13 @@
         "/dev/sda3,/": {
           "device": "/dev/sda3",
           "kb_size": "40223552",
-          "kb_used": "3603180",
-          "kb_available": "36620372",
+          "kb_used": "3603884",
+          "kb_available": "36619668",
           "percent_used": "9%",
           "mount": "/",
           "total_inodes": "40243200",
-          "inodes_used": "95714",
-          "inodes_available": "40147486",
+          "inodes_used": "95785",
+          "inodes_available": "40147415",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2728,10 +2577,7 @@
     "init_package": "systemd",
     "keys": {
       "ssh": {
-        "host_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQC+eMpP9dzsGlisDs4du42tpIcfG4x3Pc9VhGDgImrQg4rSGAkJtWb3gsiYvDf4n0LFe8QPyA2A/ahDN8txtN41bD5odgiYeXY++arRyDa9bKOMIIOHNotRWhMYP45ZHR352Y6W2f8uYiw1sFH9abC1bIs1kE2ePh1Ir7lFsAPlt71qtml7tTo2zsEayActWT0CQ7O7W/pKSALAdOlWWaPDu+k/6fsNKEGTJs1w36BpukSs8EDMtlDI5POvudsnVjyERR2q+xzpFcgW+onTiPxbWJDU7vBuD5uTpb5hfeFtnlVM+kq0OEmjKBH811CZ8MUT5I+wnmHr0Swi6fyFAfb7",
-        "host_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIZ0LyYGOBRh3Qf8dtjzX9qSzrnKaF02zgOnj/ePCGG8MEx2rxncqHHif/zC2S6vyKMH2ioJdmRy2OKh+CosxAQ=",
-        "host_ecdsa_type": "ecdsa-sha2-nistp256",
-        "host_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIBj5Au1Pnz2EAF59AB41X1xFq08co8bpFXidDRFXZzNb"
+
       }
     },
     "block_device": {
@@ -2784,30 +2630,31 @@
       "system-state-logs": "/var/log",
       "system-state-cache": "/var/cache",
       "system-state-spool": "/var/spool",
-      "user-binaries": "/root/.local/bin",
-      "user-library-private": "/root/.local/lib",
-      "user-library-arch": "/root/.local/lib/x86_64-linux-gnu",
-      "user-shared": "/root/.local/share",
-      "user-configuration": "/root/.config",
-      "user-state-cache": "/root/.cache",
-      "user": "/root",
-      "user-documents": "/root",
-      "user-music": "/root",
-      "user-pictures": "/root",
-      "user-videos": "/root",
-      "user-download": "/root",
-      "user-public": "/root",
-      "user-templates": "/root",
-      "user-desktop": "/root/Desktop",
-      "search-binaries": "/sbin",
-      "search-library-private": "/root/.local/lib",
-      "search-library-arch": "/root/.local/lib/x86_64-linux-gnu",
-      "search-shared": "/root/.local/share",
+      "user-binaries": "/home/opc/.local/bin",
+      "user-library-private": "/home/opc/.local/lib",
+      "user-library-arch": "/home/opc/.local/lib/x86_64-linux-gnu",
+      "user-shared": "/home/opc/.local/share",
+      "user-configuration": "/home/opc/.config",
+      "user-runtime": "/run/user/1000",
+      "user-state-cache": "/home/opc/.cache",
+      "user": "/home/opc",
+      "user-documents": "/home/opc",
+      "user-music": "/home/opc",
+      "user-pictures": "/home/opc",
+      "user-videos": "/home/opc",
+      "user-download": "/home/opc",
+      "user-public": "/home/opc",
+      "user-templates": "/home/opc",
+      "user-desktop": "/home/opc/Desktop",
+      "search-binaries": "/usr/local/bin",
+      "search-library-private": "/home/opc/.local/lib",
+      "search-library-arch": "/home/opc/.local/lib/x86_64-linux-gnu",
+      "search-shared": "/home/opc/.local/share",
       "search-configuration-factory": "/usr/local/share/factory/etc",
       "search-state-factory": "/usr/local/share/factory/var",
-      "search-configuration": "/root/.config"
+      "search-configuration": "/home/opc/.config"
     },
-    "ohai_time": 1574337189.9935842,
+    "ohai_time": 1574352909.8436792,
     "packages": {
       "iwl100-firmware": {
         "epoch": "999",
@@ -6896,7 +6743,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 22100,
+      "_AVPHYS_PAGES": 23840,
       "_NPROCESSORS_CONF": 2,
       "_NPROCESSORS_ONLN": 2,
       "_PHYS_PAGES": 248628,
@@ -7155,14 +7002,14 @@
     "time": {
       "timezone": "GMT"
     },
-    "chef_guid": "3d8be4ef-e5b6-4db0-b23b-26dfdec9c85b",
+    "chef_guid": "b6e98201-a075-4bd6-95de-16ea8c234b0f",
     "name": "ansible-compute-host.publicsubnet2.myvcn.oraclevcn.com",
     "chef_environment": "_default",
     "recipes": [
-      "chef-workstation::motd"
+      "chef-workstation::testing_template_skills_otherway"
     ],
     "expanded_run_list": [
-      "chef-workstation::motd"
+      "chef-workstation::testing_template_skills_otherway"
     ],
     "roles": [
 
@@ -7174,6 +7021,6 @@
     }
   },
   "run_list": [
-    "recipe[chef-workstation::motd]"
+    "recipe[chef-workstation::testing_template_skills_otherway]"
   ]
 }

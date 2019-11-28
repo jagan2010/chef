@@ -456,3 +456,96 @@ sudo chef-client -zr 'recipe[chef-workstation::motd]'
 exit
 sudo chef-client -zr 'recipe[chef-workstation::motd]'
 exit
+git status
+git add .
+git commit -m "21-NOV-2019 updates"
+git status
+git push -u origin master
+git status
+exit
+pwd
+ls -lrt
+chef generate template cookbooks/chef-workstation/ motd
+pwd
+ls -lrt
+pwd
+ls -lrt
+chef --help
+pwd
+ls -lrt
+cd cookbooks
+ls -lrt
+cd chef-workstation/
+ls -lrt
+cd templates
+ls -lrt
+cd ../../..
+ls -lrt
+pwd
+ls -lrt
+chef generate --help
+chef generate recipe cookbooks/chef-workstation/ testing_my_template_skills
+pwd
+ls -lrt
+cd /etc/
+ls -lrt
+lscat hosts
+cat hosts
+cd httpd
+ls -lrt
+cat conf
+cd ..
+ls -lrt
+cat issue
+pwd
+ls -lrt
+cat /etc/motd
+cd
+ls -lrt
+vi important.txt
+cp /etc/motd important.txt
+ls -lrt
+cat important.txt
+pwd
+ls -lrt
+chef generate template cookbooks/chef-workstation/ important.txt
+pwd
+ls -lrt
+cat important.txt 
+pwd
+ls -lrt
+pwd
+ls lrt
+pwd
+ls -lrt
+chef-client -z -r 'recipe[chef-workstation::testing_my_template_skills]'
+ohai kernel/release
+chef-client -z -r 'recipe[chef-workstation::testing_my_template_skills]'
+cat /home/opc/important.txt
+pwd
+ls -lrt
+pwd
+ls -lrt
+chef generate template cookbooks/chef-workstation/ important_otherway.txt
+pwd
+ls -lrt
+chef generate recipe cookbooks/chef-workstation/ testing_template_skills_otherway
+chef-client -z -r 'recipe[chef-workstation::testing_template_skills_otherway]'
+cat important_otherway.txt 
+chef-client -z -r 'recipe[chef-workstation::testing_template_skills_otherway]'
+pwd
+ls -lrt
+cat important_otherway.txt 
+pwd
+ls -lrrt
+pwd
+ls -lrt
+cat important.txt
+history
+pwd
+ls -lrt
+ps -ef|grep chef
+pwd
+ls -lrt
+chef --version
+chef-client --version

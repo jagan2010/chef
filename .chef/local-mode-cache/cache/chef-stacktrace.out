@@ -1,6 +1,16 @@
-Generated at 2019-11-21 11:47:56 +0000
-Chef::Exceptions::RecipeNotFound: could not find recipe motd.rb for cookbook chef-workstation
-/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/cookbook_version.rb:188:in `load_recipe'
+Generated at 2019-11-21 16:13:10 +0000
+NoMethodError: undefined method `variable' for Chef::Resource::Template
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/resource.rb:1305:in `method_missing'
+/home/opc/.chef/local-mode-cache/cache/cookbooks/chef-workstation/recipes/testing_template_skills_otherway.rb:8:in `block in from_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/resource_builder.rb:66:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/resource_builder.rb:66:in `build'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/dsl/declare_resource.rb:314:in `build_resource'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/dsl/declare_resource.rb:271:in `declare_resource'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/dsl/resources.rb:38:in `template'
+/home/opc/.chef/local-mode-cache/cache/cookbooks/chef-workstation/recipes/testing_template_skills_otherway.rb:6:in `from_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/mixin/from_file.rb:34:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/mixin/from_file.rb:34:in `from_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/cookbook_version.rb:199:in `load_recipe'
 /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/run_context.rb:350:in `load_recipe'
 /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/run_context/cookbook_compiler.rb:166:in `block in compile_recipes'
 /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/chef-14.6.47/lib/chef/run_context/cookbook_compiler.rb:163:in `each'
