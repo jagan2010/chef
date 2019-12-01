@@ -3,9 +3,12 @@
 # Recipe:: webserver
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
-package 'httpd' do
+yum_package 'httpd' do
     action :install
+    flush_cache :before
 end
+
+
 
 #file '/var/www/html/index.html' do
 #   action :create
