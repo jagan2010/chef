@@ -14,7 +14,7 @@ end
 
 template '/var/www/html/index.html' do
     source 'index.html.erb'
-    variables(:company_name => node['company']['name'], :hostname => node['hostname'], :total_memory => node['memory']['total'])
+    variable(:company_name => node['company']['name'], :hostname => node['hostname'], :total_memory => node['memory']['total'])
 end
 
 service 'httpd' do

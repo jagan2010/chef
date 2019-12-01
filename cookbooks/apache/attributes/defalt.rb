@@ -1,0 +1,1 @@
+default['company']['name'] = "Oracle india Pvt ltd"

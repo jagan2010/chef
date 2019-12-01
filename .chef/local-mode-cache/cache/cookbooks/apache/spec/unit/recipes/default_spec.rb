@@ -1,12 +1,12 @@
 #
-# Cookbook:: chef-workstation
-# Spec:: testing_my_template_skills
+# Cookbook:: apache
+# Spec:: default
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-describe 'chef-workstation::testing_my_template_skills' do
+describe 'apache::default' do
   context 'When all attributes are default, on Ubuntu 16.04' do
     let(:chef_run) do
       # for a complete list of available platforms and versions see:

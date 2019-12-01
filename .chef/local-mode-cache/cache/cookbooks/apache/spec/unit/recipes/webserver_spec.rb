@@ -1,12 +1,12 @@
 #
-# Cookbook:: chef-workstation
-# Spec:: default
+# Cookbook:: apache
+# Spec:: webserver
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-describe 'chef-workstation::default' do
+describe 'apache::webserver' do
   context 'When all attributes are default, on Ubuntu 16.04' do
     let(:chef_run) do
       # for a complete list of available platforms and versions see:

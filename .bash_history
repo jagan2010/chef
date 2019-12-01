@@ -549,3 +549,44 @@ pwd
 ls -lrt
 chef --version
 chef-client --version
+pwd
+ls -lrt
+git status
+git add /
+git add .
+git status
+git commit -m "updates on 28-NOV-2019"
+git status
+git push -u origin master
+git status
+pwd
+ls -lrt
+pwd
+ls -lrt
+ohai 
+ohai  time
+ohai  time/timezone
+ohai kernel/release
+df -hk
+pwd
+ls -lrt
+pwd
+ls -lrt
+exit
+cat modt
+cat /etc/modt
+cat /etc/motd
+ls -lrt
+df -hk
+pwd
+ls -lrt
+cd 
+ruby -c cookbooks/chef-workstation/recipes/motd.rb 
+df -hk
+pwd
+ls -lrt
+chef -help
+chef generate template -help
+chef generate template cookbooks/apache index.html
+pwd
+ls -lrt
